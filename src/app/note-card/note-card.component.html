@@ -1,17 +1,18 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="card-title">Note Title</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Description</h6>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <button type="button" class="btn btn-light">
-        <fa-icon [icon]="faEdit" class="icon" routerLink="note/edit"></fa-icon>
-      </button>
-      <span>
-        <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
-          <fa-icon [icon]="faTrash" class="icon"></fa-icon>
-        </button>
-      </span>
+      <h5 class="card-title">{{title}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{description}}</h6>
     </div>
+      <div class="btn-icon">
+        <button type="button" class="btn btn-light">
+          <fa-icon [icon]="faEdit" class="icon" routerLink="note/edit"></fa-icon>
+        </button>
+        <span>
+          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+            <fa-icon [icon]="faTrash" class="icon"></fa-icon>
+          </button>
+        </span>
+      </div>
   </div>
 
   <!-- Modal -->

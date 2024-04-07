@@ -1,15 +1,9 @@
 <div class="container">
-    <div class="row mt-40">
-      <div class="col-sm">
-       <app-note-card/>
-      </div>
-      <div class="col-sm">
-        <app-note-card/>
-      </div>
-      <div class="col-sm">
-        <app-note-card/>
+    <div class="row">
+      <div class="col-sm" *ngFor="let note of notes">
+       <app-note-card [title]="note.title" [description]="note.description"/>
       </div>
     </div>
-  </div>
+</div>
 
   

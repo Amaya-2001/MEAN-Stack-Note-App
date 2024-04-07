@@ -4,3 +4,11 @@ span{
 .icon{
     cursor:pointer;
 }
+.card{
+    height: 200px;
+}
+.btn-icon{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
